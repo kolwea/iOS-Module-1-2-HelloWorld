@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var clearButton: UIButton!
     
     @IBAction func onHello(_ sender: Any) {
-        welcomeLabel.text = "Hello World"
+        welcomeLabel.text = "Hello World!"
     }
     
     @IBAction func onClear(_ sender: Any) {
