@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var helloButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
+    
+    @IBAction func onHello(_ sender: Any) {
+        welcomeLabel.text = "Hello World"
+    }
+    
+    @IBAction func onClear(_ sender: Any) {
+        welcomeLabel.text = " "
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    
 
 }
 

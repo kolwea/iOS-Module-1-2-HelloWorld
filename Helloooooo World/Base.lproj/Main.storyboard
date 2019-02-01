@@ -27,10 +27,16 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-Lc-X8J">
                                 <rect key="frame" x="170" y="69" width="35" height="30"/>
                                 <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="onHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXI-EB-Eie"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmN-4C-AAN">
-                                <rect key="frame" x="236" y="145" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="249" y="135" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="onClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6G-vM-Na7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,6 +50,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="clearButton" destination="HmN-4C-AAN" id="ezx-WQ-wVl"/>
+                        <outlet property="helloButton" destination="4dA-Lc-X8J" id="52W-3E-Dt4"/>
+                        <outlet property="welcomeLabel" destination="ROO-AR-XsF" id="g1a-VR-rHd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
